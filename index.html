@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LC2A Invest & Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- Swiper (slider) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- AOS for scroll animations -->
+  <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+  <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+</head>
+<body class="antialiased text-gray-800">
+  <header class="bg-[#0A2342] text-white">
+    <div class="container mx-auto flex items-center justify-between p-6">
+      <a href="index.html" class="flex items-center gap-4">
+        <img src="assets/images/logo.png" alt="LC2A logo" class="h-12"/>
+        <span class="font-semibold text-lg">LC2A Invest & Consulting</span>
+      </a>
+      <nav class="space-x-6">
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="services.html" class="hover:underline">Services</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+    <div class="container mx-auto text-center py-16">
+      <h1 class="text-4xl md:text-5xl font-bold" data-aos="fade-up">Empowering Growth Through Strategic Investment</h1>
+      <p class="mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="120">Tailored financial strategies, market analysis and project execution — based in Rabat, Morocco.</p>
+      <div class="mt-8" data-aos="fade-up" data-aos-delay="240">
+        <a href="contact.html" class="bg-[#C8A039] text-[#0A2342] px-6 py-3 rounded-md font-semibold">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-12">
+    <!-- Services preview -->
+    <section class="grid md:grid-cols-4 gap-6" data-aos="fade-up">
+      <div class="p-6 bg-white rounded-lg shadow">
+        <h3 class="font-semibold">Investment Advisory</h3>
+        <p class="mt-2 text-sm">Portfolio management, risk analysis and capital allocation.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow">
+        <h3 class="font-semibold">Business Consulting</h3>
+        <p class="mt-2 text-sm">Startup support, SME acceleration and operational guidance.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow">
+        <h3 class="font-semibold">Market Analysis</h3>
+        <p class="mt-2 text-sm">Industry trends, feasibility studies, competitor intelligence.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow">
+        <h3 class="font-semibold">Project Management</h3>
+        <p class="mt-2 text-sm">End-to-end project governance from planning to delivery.</p>
+      </div>
+    </section>
+
+    <!-- Slider / Case studies -->
+    <section class="mt-12" data-aos="fade-up">
+      <h2 class="text-2xl font-bold mb-4">Selected Projects</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Consular Contact Center</h3>
+            <p class="mt-2 text-sm">Outsourced contact center and e-visa management for the Moroccan MFA.</p>
+          </div>
+          <div class="swiper-slide p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Panafrica Campus</h3>
+            <p class="mt-2 text-sm">Connecting students with educational opportunities across Africa.</p>
+          </div>
+          <div class="swiper-slide p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Public Health Projects</h3>
+            <p class="mt-2 text-sm">COVID testing and vaccination campaigns with partner laboratories.</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Team preview -->
+    <section class="mt-12 grid md:grid-cols-3 gap-6" data-aos="fade-up">
+      <div class="text-center p-6 bg-white rounded-lg shadow">
+        <img src="assets/images/logo.png" alt="Oussama" class="mx-auto h-28 w-28 object-cover rounded-full"/>
+        <h3 class="mt-4 font-semibold">Oussama Loukili</h3>
+        <p class="text-sm">CEO & Founder</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-lg shadow">
+        <h3 class="mt-4 font-semibold">Business Development</h3>
+        <p class="text-sm">Strategic partnerships and market expansion across Africa.</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-lg shadow">
+        <h3 class="mt-4 font-semibold">PMO Team</h3>
+        <p class="text-sm">Project management and delivery expertise.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#0A2342] text-white py-8 mt-12">
+    <div class="container mx-auto text-center">
+      <p>© LC2A Invest & Consulting — All Rights Reserved</p>
+      <p class="mt-2 text-sm">Rabat, Morocco • <a href="mailto:oussamaloukili@lc2ainvest.com" class="underline">oussamaloukili@lc2ainvest.com</a> • +212 661-117802</p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+    var swiper = new Swiper('.mySwiper', { slidesPerView: 1, spaceBetween: 16, pagination: { el: '.swiper-pagination', clickable: true, }, breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
+  </script>
+</body>
+</html>
