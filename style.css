@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#eee;
+    color:#333;
+}
+
+/* NAVBAR */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:white;
+}
+
+header nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+header nav ul li{
+    font-weight:500;
+}
+
+header nav ul li.active a{
+    color: #e57a22;
+    font-weight:600;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#333;
+}
+
+/* HERO */
+.hero{
+    margin:50px auto;
+    width:85%;
+    background:white;
+    display:flex;
+    padding:40px 50px;
+    border-radius:10px;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h2{
+    color:#333;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.hero-text p{
+    margin-bottom:20px;
+    color:#666;
+}
+
+.hero-text button{
+    background:#e57a22;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:8px;
+}
+
+/* ABOUT */
+.about, .services, .contact{
+    width:80%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 20px rgba(0,0,0,.05);
+}
+
+/* SERVICES GRID */
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:20px;
+}
+
+.service-box{
+    padding:15px;
+    background:#f8f8f8;
+    border-left:5px solid #e57a22;
+}
+
+/* CONTACT */
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input, .contact textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    width:120px;
+    padding:12px;
+    background:#e57a22;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#555;
+}
